@@ -80,11 +80,15 @@ public class Ventas {
 		// dependiendo si la media semanal es mayor que la venta del domingo.
 		System.out.println(diasSemana(indiceMax) + ", " + diasSemana(indiceMin) + ", " + mediaSemanal);
 		System.out.println(Arrays.toString(ventasBar));
-		
-		//Cierre de Scanner
+
+		// Cierre de Scanner
 		sc.close();
 	}
 
+	// Creamos un método estatico diasSemana le pasamos por parametro un indice que
+	// en este caso es "i". Creamos una variable como String para almacenar el día
+	// de la semana. Incluimos un switch para para dependiendo del indice se
+	// mostrara un dia u otro. Devuelve el dia de la semana que sea.
 	public static String diasSemana(int i) {
 		String diaSemana = "";
 		switch (i) {
